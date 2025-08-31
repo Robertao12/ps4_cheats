@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Patch>
+  <TitleID>CUSA01623</TitleID>
+  <Metadata Title="God of War III Remastered" 
+            Name="Disable Post-Processing (Motion Blur, DOF, Bloom)" 
+            Author="Kid bengala kk" 
+            PatchVer="1.0" 
+            AppVer="01.02" 
+            AppElf="eboot.bin" 
+            isEnabled="true">
+    <PatchList>
+
+      <!-- 🔹 Motion Blur OFF -->
+      <Line Type="shader_replace" 
+            Hash="0xA17F23D4" 
+            File="shaders/blur_off.frag"/>
+      
+      <!-- 🔹 Depth of Field OFF -->
+      <Line Type="shader_replace" 
+            Hash="0x9C5E11A2" 
+            File="shaders/dof_off.frag"/>
+      
+      <!-- 🔹 Bloom OFF -->
+      <Line Type="shader_replace" 
+            Hash="0x8D44F0B1" 
+            File="shaders/bloom_off.frag"/>
+
+    </PatchList>
+  </Metadata>
+</Patch>
